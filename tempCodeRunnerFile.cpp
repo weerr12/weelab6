@@ -3,10 +3,10 @@
 #include <cmath>
 using namespace std;
 double deg2rad(double a1){
-    return (a1*M_PI/180);
+    return (M_PI/180);
 }
 double rad2deg(double a1){
-    return (a1*180/M_PI);
+    return (180/M_PI);
 }
 double findXComponent(double l1,double l2,double a1,double a2){
     return l1*cos(a1)+l2*cos(a2);
@@ -17,10 +17,10 @@ double findYComponent(double l1,double l2,double a1,double a2){
 double pythagoras(double xcomp,double ycomp){
     return sqrt((xcomp*xcomp)+(ycomp*ycomp));
 }
-void showResult(double result_vec_length,double result_vec_direction){
+void showResult(){
     cout << "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"<<endl;
-    cout <<"Length of the resultant vector ="<<result_vec_length <<endl;
-    cout <<"Direction of the resultant vector (deg) ="<<result_vec_direction <<endl;
+    cout <<"Length of the resultant vector ="<<endl;
+    cout <<"Direction of the resultant vector (deg) ="<<endl;
     cout <<"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%";
 }
 int main(){
